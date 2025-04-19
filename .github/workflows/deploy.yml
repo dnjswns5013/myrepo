@@ -2,9 +2,11 @@ name: SANGBONG DEV SERVER TEST
 on:
   push:
     branches: [ main ]
- jobs:
+
+jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
       - name: SSH and run command on Mac using password
         uses: appleboy/ssh-action@v0.1.10
